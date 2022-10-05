@@ -1,0 +1,110 @@
+h1 {
+    text-align: center;
+
+}
+
+h2 {
+    text-align: center;
+
+}
+
+h6 {
+    text-align: center;
+
+}
+
+p {
+    text-align: center;
+}
+
+.nav-link {
+    color: white;
+    
+}
+
+.navbar {
+    background-color: grey;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+#navbar{
+    color: #0f0;
+}
+
+.collapse {
+    margin-block-end: 20px;
+    margin-left: 450px;
+}
+
+#boton1 {
+    margin-left: 200px;
+}
+
+#boton2 {
+    margin-left: 0px;
+}
+
+#texto {
+    color: white;
+    background-color: grey;
+    padding-left: 20px;
+}
+
+#texto h2 {
+
+    text-align: left;
+}
+
+#texto p {
+    text-align: left;
+    
+}
+
+
+
+#inicio h2 {
+    text-align: right;
+    color: white;
+}
+
+#inicio p {
+    text-align: right;
+    color: white;
+    }
+
+
+#oradores h2 {
+    text-align: left;
+}
+
+#oradores p {
+    text-align: left;
+}
+
+.card p {
+    text-align: left;
+}
+
+
+.foto-principal {
+   position: relative;
+    
+}
+
+.imagen-incrustada {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    
+}
+
+
+footer {
+    background-color: mediumslateblue;
+    color: white;
+    height: 100px;
+}
+
