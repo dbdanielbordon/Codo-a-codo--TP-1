@@ -15,7 +15,7 @@
       <header>
         <nav class="navbar navbar-expand-lg" id="navegador">
           <div class="container-fluid">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="index.html">
                   <img src="codoacodo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
                   Conf Bs As
                 </a>
@@ -29,41 +29,130 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                  <a class="nav-link active color" aria-current="page" href="#">La conferencia</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Los oradores</a>
+                  <a class="nav-link color" href="#">Los oradores</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">El lugar y la fecha</a>
+                  <a class="nav-link color" href="#">El lugar y la fecha</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Conviértete en orador</a>
+                  <a class="nav-link color" href="#">Conviértete en orador</a>
                 </li>
                   
               </ul>
               <form class="d-flex" role="search">
                 
-                <button class="btn" type="submit" id="navbar">Comprar Tickets</button>
+                <a href="index.html" class="btn" type="submit" id="navbar">Inicio</a>
               </form>
             </div>
           </div>
         </nav>  
 
       </header>
-
+      <!-- Los descuentos y el valor -->
        <main>
-
-
+        <div class="container">
+        <div class="card-group">
+          <div class="card">
+            <div class="card border-primary" style="width: 100%">
+              
+              <div class="card-body">
+                <h5 class="centro card-title">Estudiante</h5>
+                <h6>Tienen un descuento</h6>
+                <h5 class="centro" >80%</h5>
+                <p class="centro card-text">* presentar documentación</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="alto card border-info" style="width: 100%">
+              
+              <div class="card-body">
+                <h5 class="centro card-title">Trainee</h5>
+                <h6>Tienen un descuento</h6>
+                <h5 class="centro" >50%</h5>
+                <p class="centro card-text">* presentar documentación</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card border-warning" style="width: 100%">
+             
+              <div class="card-body">
+                <h5 class="centro card-title">Junior</h5>
+                <h6>Tienen un descuento</h6>
+                <h5 class="centro" >15%</h5>
+                <p class="centro card-text">* presentar documentación</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="linea" >
+          <h6>VENTA</h6>
+          <h2>VALOR DEL TICKET $200</h2>
+        </div>
+      </div>
        </main>
-
+       <!-- El formulario -->
         <section>
+         <div class="container">
 
+          <form id="formulario" class="row g-3">
+            <div class="col-md-6">
+              
+              <input type="text" class="form-control" id="inputEmail4" placeholder="Nombre" >
+            </div>
+            <div class="col-md-6">
+              
+              <input type="text" class="form-control" id="inputName" placeholder="Apellido" >
+            </div>
+            <div class="col-12">
+              
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Correo">
+            </div>
+            
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">Cantidad</label>
+              <input id="cantidad" type="number" class="form-control" id="inputCity">
+            </div>
+            <div  class="col-md-6">
+              <label for="inputState" class="form-label">Categoría</label>
+              <select id="cliente" id="inputState" class="form-select">
+                <option  value="estudiante"   >Estudiante</option>
+                <option  value="trainee" >Trainee</option>
+                <option  value="junior" >Junior</option>
+              </select>
+            </div>
+            
+            
+            
+          </form>
+              
+              
+
+              <div id="total-pagar" class="linea col-12">
+                <input id="color"  type="text" class="form-control" id="inputAddress" placeholder  = "Total a pagar $">
+              </div>
+
+              
+
+                  <div class="alinear linea col-12">
+                    <input onclick="reset(formulario)" class="col-6 btn btn-success" type="reset" value="Borrar">
+                    <button onclick="totalPagar()" id="alinear2"  class="col-6 btn btn-success" type="button">Resumen</button>
+                    
+                    
+                  </div>
+                
+             
+
+          </div>
 
         </section>
 
         <footer>
-          <div class="container">
+          <div class="linea container">
             <div class="row">
                 <div class="col">Preguntas frecuentes</div>
                 <div class="col">Contáctanos</div>    
@@ -79,11 +168,11 @@
 
         </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 
 
-
-
+        <script src="script.js" ></script>
 
     </body>
 
